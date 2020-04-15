@@ -81,7 +81,7 @@ describe('Reviews Component', () => {
     const wrapper = mount(<Provider store={store}><App /></Provider>);
 
     expect(wrapper.find(ReviewsContainer).html()).to.include(wrapper.find(Reviews).html())
-  });  
+  });
 
   it('has an unique id property that for each element', () => {
     const store = createStore(manageRestaurant);
